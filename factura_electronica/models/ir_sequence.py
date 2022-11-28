@@ -25,7 +25,7 @@ class IrSequence(models.Model):
 		('NDE-65', 'Nota de Debito')],"Tipo", help="Tipo de documento", readonly=False, default='FACE-63')
 	resoluciones_ids = fields.One2many('ir.sequence.resolution', 'sequence_id', string="Resoluciones")
 	
-IrSequence()
+
 
 
 class IrSequenceResolution(models.Model):
@@ -70,4 +70,4 @@ class IrSequenceResolution(models.Model):
 			})
 			self.write({'state': 'uso',})
 		return True
-IrSequenceResolution()
+
