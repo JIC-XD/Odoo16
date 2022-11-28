@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="satdte_frases_data_1" model="satdte.frases">
+            <field name="name">Exportaciones. Cuando el vendedor exporta bienes o servicios.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 2 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">1</field>
+        </record>
+        <record id="satdte_frases_data_2" model="satdte.frases">
+            <field name="name">Servicios que presten las instituciones fiscalizadas por la Superintendencia de Bancos y las bolsas de valores autorizadas para operar en el país.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 4 Ley del IVA</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">2</field>
+        </record>
+        <record id="satdte_frases_data_3" model="satdte.frases">
+            <field name="name">Ventas de cooperativas. Cuando una cooperativa les vende bienes o servicios a sus asociados, cooperativas, federaciones, centrales de servicios y confederaciones de cooperativas.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 5 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">3</field>
+        </record>
+        <record id="satdte_frases_data_4" model="satdte.frases">
+            <field name="name">Aportes y donaciones a asociaciones, fundaciones e instituciones, educativas, culturales de asistencia o de servicio social y las religiosas no lucrativas.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 9 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">4</field>
+        </record>
+        <record id="satdte_frases_data_5" model="satdte.frases">
+            <field name="name">Pagos por el derecho de ser miembro y las cuotas periódicas a las asociaciones o instituciones sociales, gremiales, culturales, científicas, educativas y deportivas, así como a los colegios de profesionales y los partidos políticos.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 10 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">5</field>
+        </record>
+        <record id="satdte_frases_data_6" model="satdte.frases">
+            <field name="name">Servicios exentos que prestan las asociaciones, fundaciones e instituciones educativas, de asistencia o de servicio social y las religiosas, y otras</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 13 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">6</field>
+        </record>
+        <record id="satdte_frases_data_7" model="satdte.frases">
+            <field name="name">Venta de activos de Bancos o Sociedades Financieras a las que la Superintendencia de Bancos haya aprobado un plan de regulación o en que exista Junta de Exclusión de activos y pasivos, cuando se transfieran a otros Bancos o sociedades financieras, previa autorización de la Junta Monetaria. Esta exención tendrá validez siempre que la operación no sea para eludir responsabilidades civiles, penales, o de otra naturaleza.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 14 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">7</field>
+        </record>
+        <record id="satdte_frases_data_8" model="satdte.frases">
+            <field name="name">Servicios exentos centros educativos privados en lo que respecta a la matrícula de inscripción, colegiaturas y derechos de examen, de los cursos que tengan autorizados por la autoridad competente.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 8 núm. 1 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">8</field>
+        </record>
+        <record id="satdte_frases_data_9" model="satdte.frases">
+            <field name="name">Medicamentos. Cuando una compañía farmacéutica les vende medicamentos genéricos o antirretrovirales a determinados pacientes.</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 15 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">9</field>
+        </record>
+        <record id="satdte_frases_data_10" model="satdte.frases">
+            <field name="name">Vehículos: Cuando se vende un vehículo terrestre del modelo de dos o más años anteriores al del año en curso.</field>
+            <field name="descripcion_frase">Esta factura no incluye IVA (art. 55 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">10</field>
+        </record>
+        <record id="satdte_frases_data_11" model="satdte.frases">
+            <field name="name">Ventas a maquilas. Cuando el vendedor vende bienes o servicios de producción local a empresas calificadas bajo el decreto 29-89. Base legal: artículo 12 bis literal g del decreto 29-89 Ley de Maquila; artículo 11 del Acuerdo Gubernativo 5-2013 Reglamento de la Ley del IVA. Operaciones específicas de maquilas, usuarios de zonas francas y coexportadores. Para los casos de ventas no afectas al IVA que pueden darse entre estos actores. Base legal: artículo 36 bis y 36 ter del Decreto 29-89, Ley de Fomento a la Actividad Exportadora y de Maquila.</field> 
+            <field name="descripcion_frase">No afecta al IVA (Decreto 29-89 Ley de Maquila)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">11</field>
+        </record>
+        <record id="satdte_frases_data_12" model="satdte.frases">
+            <field name="name">Ventas a zonas francas. Cuando el vendedor vende bienes o servicios de producción local a empresas calificadas bajo el decreto 65-89. Base legal: artículo 22 bis literal e del decreto 29-89 Ley de Zonas Francas. Ventas de zonas francas. Por transferencias de mercancías que se realicen dentro y entre zonas francas. Base legal: artículo 22 literal c del Decreto 65-89 Ley de Zonas Francas</field>
+            <field name="descripcion_frase">No afecta al IVA (Decreto 65-89 Ley de Zonas Francas)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">12</field>
+        </record>
+        <record id="satdte_frases_data_13" model="satdte.frases">
+            <field name="name">Venta de vivienda. Cuando la vivienda no exceda los límites de medición y valor que contempla la ley del impuesto al Valor Agregado; así como las segundas subsiguientes transferencias de dominio de viviendas por cualquier título, que tributen conforme la Ley del Impuesto de Timbres Fiscales</field>
+            <field name="descripcion_frase">Exenta del IVA (art. 7 núm. 12, Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">13</field>
+        </record>
+        <record id="satdte_frases_data_14" model="satdte.frases">
+            <field name="name">Venta de títulos y acciones. La creación, emisión, circulación y transferencia de títulos de crédito, títulos valores y acciones de cualquier clase, exceptuando la factura cambiaria, cuando la emisión, aceptación o negociación corresponda a actos gravados por la presente ley.</field>
+            <field name="descripcion_frase">Venta de títulos y acciones. Exenta del IVA (art. 7 núm. 6 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">14</field>
+        </record>
+        <record id="satdte_frases_data_15" model="satdte.frases">
+            <field name="name">Venta al menudeo en mercados. La venta al menudeo de carnes, pescado, mariscos, frutas y verduras frescas, cereales. legumbres y granos básicos a consumidores finales en mercados cantonales y municipales, siempre que tales ventas no excedan de cien quetzales (Q. 100.00) por cada transacción.</field>
+            <field name="descripcion_frase">Venta al menudeo en mercados. Exenta del IVA (art. 7 núm. 11 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">15</field>
+        </record>
+        <record id="satdte_frases_data_16" model="satdte.frases">
+            <field name="name">Ventas y servicios universidades. Las universidades autorizadas para funcionar en el país.</field>
+            <field name="descripcion_frase">Ventas y servicios universidades. Exenta del IVA (art. 8 núm. 2 Ley del IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">16</field>
+        </record>
+        <record id="satdte_frases_data_17" model="satdte.frases">
+            <field name="name">Ventas Zolic. Los usuarios que se instalen y operen dentro de la Zona Libre gozarán de exención al Impuesto al Valor Agregado por los hechos y actos gravados realizados dentro de la Zona Libre.</field>
+            <field name="descripcion_frase">Ventas Zolic. Exenta del IVA (art. 32 literal c Ley Orgánica Zolic)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">17</field>
+        </record>
+        <record id="satdte_frases_data_18" model="satdte.frases">
+            <field name="name">Ventas a exentos con resolución específica. Cuando se efectué una venta a contribuyentes que cuentan con resoluciones específicas de exención al IVA, (por ejemplo, ventas en aeropuertos)</field>
+            <field name="descripcion_frase">Ventas a exentos con resolución específica. (Contribuyentes con resoluciones específicas de exención al IVA)</field>
+            <field name="tipo_frase">4</field>
+            <field name="codigo_escenario">18</field>
+        </record>
+
+    </data>
+</odoo>

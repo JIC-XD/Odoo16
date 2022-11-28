@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+	<record model="ir.ui.view" id="sequence_form_inherit1">
+		<field name="name">sequence.form.inherit1</field>
+		<field name="model">ir.sequence</field>
+		<field name="inherit_id" ref="base.sequence_view"/>
+		<field name="arch" type="xml">
+			<page position="after">
+				<page string="Resoluciones" >
+					<field colspan="8"  name="resoluciones_ids">
+							<form>
+								<header>
+									<button name="action_asignar" string="Asignar" type="object" class="oe_highlight" states="draft"/>
+									<field name="state" widget="statusbar" statusbar_visible="draft,uso,terminado,vencida"/>
+								</header>
+								<group col="4" colspan="2">
+									<field name="resolucion" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="serie" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="fiscal_position" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="tipo" string="Tipo" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="fecha_emision" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="fecha_vencimiento" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="no_del" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+									<field name="no_al" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								</group>
+							</form>
+							<tree>
+								<field name="resolucion" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="serie" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="fiscal_position" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="fecha_emision" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="fecha_vencimiento" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="no_del" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="no_al" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="tipo" string="Tipo" attrs="{'readonly':[('state','in',['uso','terminado', 'vencida'])]}"/>
+								<field name="state" invisible="1"/>
+							</tree>
+						</field>
+					</page>
+					<page string="WS Factura Electronica" >
+						<group>
+							<group col="4" colspan="2">
+								<field name="establecimiento" required="0"/>
+								<field name="dispositivo" required="0"/>
+								<field name="cod_cliente" required="0"/>
+								<field name="user_eface" required="0"/>
+								<field name="llave_eface" required="0"/>
+								<field name="gui" required="0" invisible="1"/>
+								<field name="codigo_sat" required="0" invisible="1"/>
+							</group>
+								<field name="url_ws" required="0"/>
+						</group>
+				</page>
+			</page>
+		</field>
+	</record>
+
+	
+	<record model='ir.ui.view' id='sequence_form_inherit2'>
+		<field name='name'>sequence.form.inherit2</field>
+		<field name='model'>ir.sequence</field>
+		<field name='inherit_id' ref='base.sequence_view'/>
+		<field name='type'>form</field>
+		<field name='arch' type='xml'>
+			<field name="number_increment" position="after"> 
+				<field name="fiscal_position" required="0" invisible="1"/>
+				<field name="tipo" required="0" invisible="1"/>
+				<field name="resolucion" required="0" invisible="1"/>
+			</field>
+		</field>
+	</record>
+
+</odoo>

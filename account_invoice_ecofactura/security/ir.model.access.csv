@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+satdte_frases_account_user,satdte.frases.account.user,model_satdte_frases,account.group_account_user,1,0,0,0
+satdte_frases_account_manager,satdte.frases.account.manager,model_satdte_frases,account.group_account_manager,1,1,1,1
+satdte_frases_account_invoice,satdte.frases.account.invoice,model_satdte_frases,account.group_account_invoice,1,0,0,0
+access_megaprint_payment_line,megaprint.payment.line,model_megaprint_payment_line,account.group_account_user,1,1,1,1

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+	<record model='ir.ui.view' id='account_journal_form_view_inherit1'>
+		<field name='name'>account.journal.form.inherit2</field>
+		<field name='model'>account.journal</field>
+		<field name='inherit_id' ref='account.view_account_journal_form'/>
+		<field name='type'>form</field>
+		<field name='arch' type='xml'>
+			<field name="code" position="before"> 
+				<field name="is_eface"/>
+			</field>
+		</field>
+	</record>
+
+	<record model='ir.ui.view' id='account_tax_form_view_inherit1'>
+		<field name='name'>account.tax.form.inherit2</field>
+		<field name='model'>account.tax</field>
+		<field name='inherit_id' ref='account.view_tax_form'/>
+		<field name='type'>form</field>
+		<field name='arch' type='xml'>
+			<field name="amount_type" position="before"> 
+				<field name="type_eface"/>
+			</field>
+		</field>
+	</record>
+</odoo>

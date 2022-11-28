@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ir_sequence_resolution_group_user,ir_sequence_resolution group_user,model_ir_sequence_resolution,base.group_user,1,0,0,0
+access_ir_sequence_resolution_group_system,ir_sequence_resolution group_system,model_ir_sequence_resolution,base.group_system,1,1,1,1

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_partner_exportacion_form" model="ir.ui.view">
+        <field name="name">res.partner.exportacion.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page id="exportaciones" string="Exportaciones">
+                    <group>
+                        <group col="4" colspan="4" string="Consignatario">
+                            <field name="nombre_exportacion" />
+                            <field name="direccion_exportacion" />
+                            <field name="codigo_exportacion" />
+                        </group>
+                        <group string="Exportacion">
+                            <field name="referencia_exportacion" />
+                            <field name="incoterm_exportacion" />
+                        </group>
+                        <group string="Exportador">
+                            <field name="exportador_exportacion" />
+                            <field name="codigo_exportador_exportacion" />
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

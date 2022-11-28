@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.ui.view" id="view_account_invoice_eface">
+		<field name="name">view.account.move.eface</field>
+		<field name="model">account.move</field>
+		<field name="inherit_id" ref="account.view_move_form"/>
+		<field name="arch" type="xml">
+			<page position="after">
+				<page string="Factura Electronica" >
+					<group col="4" colspan="2">
+						<field name="id_sat" invisible="1"/>
+						<field name="id_serie_sat" invisible="1"/>
+						<field name="serie"/>
+						<field name="no_documento"/>
+						<field name="consumido_eface" invisible="1"/>
+					</group>
+					<group>
+						<field name="cae"/>
+					</group>
+					<group>
+						<field name="txt_filename" invisible="1"/>
+						<field name="file" filename="txt_filename" nolabel="1"/>
+					</group>
+					<group>
+						<field name="notas" placeholder="Notas"/>
+					</group>
+				</page>
+			</page>
+		</field>
+	</record>
+	<!--vista de lista-->
+	<record model="ir.ui.view" id="view_account_invoice_eface_tree">
+		<field name="name">view.account.move.eface.tree</field>
+		<field name="model">account.move</field>
+		<field name="inherit_id" ref="account.view_out_invoice_tree"/>
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='invoice_date']" position="after">
+				<field name="no_documento"/>					
+			</xpath>
+		</field>
+	</record>
+
+</odoo>

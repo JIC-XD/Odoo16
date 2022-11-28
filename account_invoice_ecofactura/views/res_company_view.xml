@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_company_view_digifact_form" model="ir.ui.view">
+        <field name="name">res.company.digifact.view</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page id="page_fel_company" string="Información FEL">
+                    <group col="2" colspan="2">
+                        <field name="username"/>
+                        <field name="password"/>
+                        <field name="request_id"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="regimen_iva"/>
+                            <field name="codigo_est"/>
+                        </group>
+                        <group>
+                            <field name="nombre_est"/>
+                            <field name="nombre_comercial"/>
+                        </group>
+                    </group>
+                </page>
+                <page id="page_token_access" string="FEL Token">
+                    <button string="Generar Token" name="action_get_token" icon="fa-refresh" type="object" class="btn-primary"/>
+                    <group string="Token de Autorizacion">
+                        <group>
+                            <field name="token_access" readonly="1"/>
+                            <field name="date_due" readonly="1"/>
+                            <field name="company_nit" readonly="1"/>
+                        </group>
+                        <group>
+                            <label for="url_token" string="URL Token"/>
+                            <div>
+                                <field name="url_token" nolabel="1" groups="account_invoice_ecofactura.group_request_response_fel_manager"/>
+                            </div>
+                            <label for="url_request" string="URL Firmado"/>
+                            <div>
+                                <field name="url_request" groups="account_invoice_ecofactura.group_request_response_fel_manager"/>
+                            </div>
+                            <label for="url_cancel" string="URL Anulacion"/>
+                            <div>
+                                <field name="url_cancel" groups="account_invoice_ecofactura.group_request_response_fel_manager"/>
+                            </div> 
+                        </group>
+                        <group>
+                            
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+</odoo>

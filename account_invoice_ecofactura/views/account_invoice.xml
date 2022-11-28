@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--<record id="invoice_form_inherit" model="ir.ui.view">
+            <field name="name">account.move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="print_pdf" type="object" states="open" string="Imprimir PDF"
+                            class="oe_highlight" groups="base.group_user"/>
+                </xpath>
+            </field>
+        </record>-->
+
+
+        <record id="view_invoice_form_inherit" model="ir.ui.view">
+            <field name="name">account.move.fel.digifact.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <field name="payment_state" position="after">
+                    <field name="frase_id" options="{'no_create_edit': True}"/>
+                </field>
+                <notebook position="inside">
+                    <page id="page_fel_information" string="FEL" >
+                        <group>
+                            <field name="fecha_emision" />
+                            <field name="fecha_certificacion"/>
+                            <field name="numero_autorizacion"/>
+                            <field name="serie"/>
+                            <field name="numero"/>
+                        </group>
+                        <group>
+                            <field name="txt_filename" invisible="1"/>
+                            <field name="file" filename="name" nolabel="1"/>
+                        </group>
+                        <group string="Anulaciones">
+                            <field name="razon_anulacion"/>
+                        </group>
+                    </page>
+                    <page id="page_fel_payments" string="Pagos" attrs="{'invisible': [('factura_cambiaria','!=', True)]}">
+                        <group>
+                            <group>
+                                <field name="number_of_payments" attrs="{'invisible': [('factura_cambiaria','!=', True)]}"/>
+                                <field name="frecuencia_de_vencimiento" attrs="{'invisible': [('factura_cambiaria','!=', True)]}"/>
+                                <field name="factura_cambiaria" invisible="1"/>
+                            </group>
+                            <group>
+                                <button string="Agregar" name="calculate_payment_info"
+                                        icon="fa-refresh" type="object" class="btn-primary"/>
+                                <field name="megaprint_payment_lines" nolabel="1" readonly="1">
+                                    <tree create="false" delete="false" edit="false">
+                                        <field name="serial_no"/>
+                                        <field name="amount"/>
+                                        <field name="due_date"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group/>
+                        </group>
+                    </page>
+                    <page id="page_xml_request" string="XML Request" groups="account.group_account_manager,account_invoice_ecofactura.group_request_response_fel_manager">
+                        <field name="xml_request" nolabel="1"/>
+                    </page>
+                    <page id="page_xml_response" string="Response XML" groups="account.group_account_manager,account_invoice_ecofactura.group_request_response_fel_manager">
+                        <field name="xml_response" nolabel="1"/>    
+                        <field name="xml_notes" nolabel="1"/>
+                    </page>
+                </notebook>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
