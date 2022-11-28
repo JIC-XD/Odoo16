@@ -81,7 +81,7 @@ class AccountInvoice(models.Model):
         response_xml = ET.fromstring(self.xml_response)
         for child in response_xml:
             if child.tag == 'Pdf':
-                self.file = base64.encodestring(base64.standard_b64decode(child.text))
+                self.file = base64.encodebytes(base64.standard_b64decode(child.text))
                 self._create_attachment()
                 
     def _create_attachment(self):
