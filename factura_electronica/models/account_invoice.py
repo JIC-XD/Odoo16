@@ -467,5 +467,3 @@ class AccountMove(models.Model):
 			#raise osv.except_osv(_('Prueba'), _('%s')%(xml_string))
 		return xml_string
 
-
-AccountMove()
