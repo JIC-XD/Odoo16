@@ -9,7 +9,7 @@ class AccountJournal(models.Model):
 	
 	is_eface = fields.Boolean('Factura Electronica', required=False, help="Marque si este diario utilizara emision de facturas electronica")
 	
-AccountJournal()
+
 
 
 class AccountTax(models.Model):
@@ -23,4 +23,4 @@ class AccountTax(models.Model):
 		('IDP', 'Impuesto Distribucion de Petroleo'),
 		('IBV', 'Impuesto Bomberos Voluntarios'),
 		('NA', 'No Aplica')], 'EFACE', required=True, default='NA', help="Impuesto para Factura electronica")
-AccountTax()
+
