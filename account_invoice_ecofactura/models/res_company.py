@@ -77,5 +77,3 @@ class ResCompany(models.Model):
                     diff -= 1
             res_nit = str(qty_zero) + str(nit)
         return res_nit
-
-ResCompany()
