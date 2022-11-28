@@ -17,10 +17,7 @@ _logger = logging.getLogger(__name__)
 class AccountInvoice(models.Model):
     _inherit = 'account.move'
 
-    def _check_balanced(self):
-        if self._context.get("force_reset_draft"):
-            return
-        return super(AccountInvoice,self)._check_balanced(self)
+
 
     uuid_fel = fields.Char(string='No. Factura', readonly=True, default=0, copy=False,
                             states={'draft': [('readonly', False)]}, help='UUID returned by certifier')  # No. Invoice
